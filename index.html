@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect For Transport - Sacolas Ecológicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for animations and effects */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f5f0 0%, #f0f0e5 50%, #e5e5da 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            background-color: #3f6212;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #4d7c0f;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: #ea580c;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #f97316;
+            transform: translateY(-2px);
+        }
+        
+        /* Animation for the eco badge */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Recycled paper background */
+        body {
+            background-color: #f5f5f0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header with Logo Space -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- LOGO SPACE - REPLACE WITH YOUR LOGO -->
+            <!-- You can replace this div with your actual logo image -->
+            <div class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <i class="fas fa-leaf text-green-600 text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-green-800">Perfect For Transport</h1>
+            </div>
+            <!-- END LOGO SPACE -->
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-green-700 hover:text-green-900 font-medium">Sobre</a>
+                <a href="#produtos" class="text-green-700 hover:text-green-900 font-medium">Produtos</a>
+                <a href="#personalizadas" class="text-green-700 hover:text-green-900 font-medium">Personalizadas</a>
+                <a href="#contato" class="text-green-700 hover:text-green-900 font-medium">Contato</a>
+            </nav>
+            
+            <button class="md:hidden text-green-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full mb-4 font-medium">
+                    <i class="fas fa-leaf mr-2"></i> Soluções Ecológicas
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Seu produto, nosso cuidado</h1>
+                <p class="text-xl text-gray-600 mb-8">Na P.F.T., oferecemos sacolas kraft personalizadas de alta qualidade que protegem seus produtos e reforçam sua marca, com responsabilidade ambiental.</p>
+                <div class="flex space-x-4">
+                    <a href="#produtos" class="btn-primary text-white px-6 py-3 rounded-full font-medium shadow-md">Nossos Produtos</a>
+                    <a href="#personalizadas" class="btn-secondary text-white px-6 py-3 rounded-full font-medium shadow-md">Personalizar Agora</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- BANNER SPACE - REPLACE WITH YOUR BANNER IMAGE -->
+               <div class="w-full max-w-md bg-green-50 rounded-xl shadow-lg p-8 flex items-center justify-center border-2 border-green-200">
+    <img src="Minha imagem do ChatGPT.png" alt="Logo da P.F.T." class="w-full h-auto object-contain rounded-xl">
+</div>
+
+                <!-- END BANNER SPACE -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Por que escolher nossas sacolas?</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-recycle text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">100% Biodegradável</h3>
+                    <p class="text-gray-600 text-center">Nossas sacolas são feitas de materiais naturais que se decompõem rapidamente, sem prejudicar o meio ambiente.</p>
+                </div>
+                
+                <div class="bg-orange-50 p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-medal text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Alta Resistência</h3>
+                    <p class="text-gray-600 text-center">Projetadas para suportar peso sem rasgar, garantindo segurança para seus produtos durante o transporte.</p>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-paint-brush text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Personalização</h3>
+                    <p class="text-gray-600 text-center">Crie sacolas exclusivas com sua marca, cores e mensagens, fortalecendo sua identidade visual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Produtos</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Sacolas kraft personalizadas para todas as necessidades</p>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Small Bag -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="bg-green-100 rounded-lg p-4 mb-6 flex justify-center">
+                        <i class="fas fa-shopping-bag text-5xl text-green-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-2">Sacola Pequena</h3>
+                    <p class="text-gray-500 text-center mb-4">20x15x10 cm</p>
+                    <div class="flex justify-center mb-6">
+                        <span class="text-3xl font-bold text-gray-800">R$ 0,85</span>
+                        <span class="text-sm text-gray-500 self-end ml-1">/unidade*</span>
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Até 3kg</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Alça reforçada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Ideal para doces e pequenos itens</span>
+                        </li>
+                    </ul>
+                    <a href="#personalizadas" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition duration-300 text-center">
+                        Personalizar Agora
+                    </a>
+                    <p class="text-xs text-gray-400 mt-2 text-center">*Preço para compras acima de 100 unidades</p>
+                </div>
+                
+                <!-- Medium Bag (Featured) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transform scale-105 border-2 border-orange-200 relative">
+                    <div class="absolute -top-3 -right-3 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold pulse-animation">
+                        MAIS VENDIDO
+                    </div>
+                    <div class="bg-orange-100 rounded-lg p-4 mb-6 flex justify-center">
+                        <i class="fas fa-shopping-bag text-5xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-2">Sacola Média</h3>
+                    <p class="text-gray-500 text-center mb-4">30x20x15 cm</p>
+                    <div class="flex justify-center mb-6">
+                        <span class="text-3xl font-bold text-gray-800">R$ 1,20</span>
+                        <span class="text-sm text-gray-500 self-end ml-1">/unidade*</span>
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            <span>Até 6kg</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            <span>Alça extra resistente</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-2"></i>
+                            <span>Perfeita para roupas e presentes</span>
+                        </li>
+                    </ul>
+                    <a href="#personalizadas" class="block w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition duration-300 text-center">
+                        Personalizar Agora
+                    </a>
+                    <p class="text-xs text-gray-400 mt-2 text-center">*Preço para compras acima de 100 unidades</p>
+                </div>
+                
+                <!-- Large Bag -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover">
+                    <div class="bg-green-100 rounded-lg p-4 mb-6 flex justify-center">
+                        <i class="fas fa-shopping-bag text-5xl text-green-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800 mb-2">Sacola Grande</h3>
+                    <p class="text-gray-500 text-center mb-4">40x30x20 cm</p>
+                    <div class="flex justify-center mb-6">
+                        <span class="text-3xl font-bold text-gray-800">R$ 1,65</span>
+                        <span class="text-sm text-gray-500 self-end ml-1">/unidade*</span>
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Até 10kg</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Alça dupla reforçada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Ideal para compras maiores</span>
+                        </li>
+                    </ul>
+                    <a href="#personalizadas" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition duration-300 text-center">
+                        Personalizar Agora
+                    </a>
+                    <p class="text-xs text-gray-400 mt-2 text-center">*Preço para compras acima de 100 unidades</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-6 rounded-xl shadow-sm max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Preços calculados com base no mercado de São Paulo - SP</h3>
+                <p class="text-gray-600 text-center">Nossos preços foram cuidadosamente calculados após pesquisa com os principais fornecedores de sacolas kraft na região de São Paulo. Garantimos qualidade superior com preços competitivos, permitindo que você tenha um excelente custo-benefício.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Bags Section -->
+    <section id="personalizadas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sacolas Personalizadas</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Transforme suas sacolas em poderosas ferramentas de marketing</p>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
+                <div class="md:w-1/2">
+                    <div class="bg-green-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Crie sua sacola exclusiva</h3>
+                        <p class="text-gray-600 mb-6">Personalize cada detalhe da sua sacola kraft para reforçar sua marca e transmitir seus valores:</p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-3">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                                <p class="text-gray-700"><span class="font-medium">Impressão em até 4 cores</span> - Destaque sua logo e mensagens</p>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-3">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                                <p class="text-gray-700"><span class="font-medium">Papel especial</span> - Escolha entre diferentes gramaturas e acabamentos</p>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-3">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                                <p class="text-gray-700"><span class="font-medium">Alças personalizadas</span> - Corda, fita ou mesmo alças de papel reforçado</p>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-3">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                                <p class="text-gray-700"><span class="font-medium">Quantidade flexível</span> - A partir de 100 unidades</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400 mb-6">
+                            <h4 class="font-bold text-orange-800 mb-2">Exemplo de Preço para Sacola Média Personalizada:</h4>
+                            <p class="text-gray-700">100 unidades: <span class="font-bold">R$ 2,90/un</span></p>
+                            <p class="text-gray-700">500 unidades: <span class="font-bold">R$ 2,50/un</span></p>
+                            <p class="text-gray-700">1000 unidades: <span class="font-bold">R$ 2,10/un</span></p>
+                            <p class="text-sm text-gray-500 mt-2">*Preços incluem impressão em 1 cor, alça padrão e entrega na Grande SP</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl border-2 border-green-200 shadow-md">
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-6">Simule sua sacola personalizada</h3>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Tamanho</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option>Pequeno (20x15x10 cm)</option>
+                                    <option selected>Médio (30x20x15 cm)</option>
+                                    <option>Grande (40x30x20 cm)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Quantidade</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option>100 unidades</option>
+                                    <option>250 unidades</option>
+                                    <option selected>500 unidades</option>
+                                    <option>1000 unidades</option>
+                                    <option>2000+ unidades</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Cores de impressão</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option>1 cor</option>
+                                    <option selected>2 cores</option>
+                                    <option>3 cores</option>
+                                    <option>4 cores</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Tipo de alça</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option selected>Padrão (papel reforçado)</option>
+                                    <option>Corda de algodão</option>
+                                    <option>Fita de tecido</option>
+                                    <option>Alça plana larga</option>
+                                </select>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <div class="flex justify-between items-center bg-green-50 px-4 py-3 rounded-lg">
+                                    <span class="font-medium text-gray-700">Preço estimado:</span>
+                                    <span class="text-xl font-bold text-green-700">R$ 2,50/un</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-2">*Preço final pode variar conforme especificações detalhadas</p>
+                            </div>
+                            
+                            <a href="#contato" class="block w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition duration-300 text-center">
+                                Solicitar Orçamento Completo
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-green-50 p-8 rounded-xl max-w-4xl mx-auto">
+                <h3 class="text-xl font-bold text-center text-gray-800 mb-4">Por que investir em sacolas personalizadas?</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-8 w-8 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-4">
+                            <i class="fas fa-bullhorn text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Marketing Grátis</h4>
+                            <p class="text-gray-600">Cada sacola que sai da sua loja vira um anúncio ambulante da sua marca, sem custos adicionais de divulgação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-8 w-8 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-4">
+                            <i class="fas fa-heart text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Fidelização</h4>
+                            <p class="text-gray-600">Clientes valorizam marcas que demonstram preocupação com o meio ambiente, aumentando a fidelização.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-8 w-8 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-4">
+                            <i class="fas fa-chart-line text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Valor Percebido</h4>
+                            <p class="text-gray-600">Produtos entregues em embalagens personalizadas e de qualidade são percebidos como mais valiosos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-8 w-8 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-4">
+                            <i class="fas fa-users text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Diferencial Competitivo</h4>
+                            <p class="text-gray-600">Destaque-se da concorrência com uma embalagem que conta a história da sua marca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">O que nossos clientes dizem</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Ana Lúcia</h4>
+                            <p class="text-sm text-gray-500">Loja de Doces Finos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"As sacolas médias da P.F.T. são perfeitas para meus doces. Meus clientes adoram a apresentação e eu amo o fato de serem ecológicas. A personalização fez toda diferença no meu negócio!"</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Carlos Eduardo</h4>
+                            <p class="text-sm text-gray-500">Boutique de Roupas</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Depois que comecei a usar as sacolas grandes personalizadas da P.F.T., meus clientes passaram a comentar muito mais sobre minha marca. A qualidade é excelente e o atendimento super profissional."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0 h-12 w-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Mariana</h4>
+                            <p class="text-sm text-gray-500">Loja de Presentes</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"A qualidade das sacolas personalizadas superou minhas expectativas. Meus clientes adoram a proposta sustentável e eu pude reforçar minha identidade visual com a impressão da minha logo."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar suas embalagens?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Junte-se a centenas de empresas que já estão usando nossas sacolas ecológicas para impressionar seus clientes e proteger o planeta.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#produtos" class="bg-white text-green-700 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition duration-300">
+                    Ver Produtos
+                </a>
+                <a href="#contato" class="bg-orange-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-orange-600 transition duration-300">
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Tem dúvidas ou precisa de um orçamento especial? Fale conosco!</p>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                    
+                    <!-- CONTACT INFO SPACE - ADD YOUR DETAILS HERE -->
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Endereço</h4>
+                                <p class="text-gray-600">São Paulo - SP</p>
+                                <p class="text-sm text-gray-500 mt-1">*Informe seu endereço completo aqui</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone-alt text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Telefone</h4>
+                                <p class="text-gray-600">(11) 99999-9999</p>
+                                <p class="text-sm text-gray-500 mt-1">*Horário comercial</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-green-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">contato@perfectfortransport.com.br</p>
+                                <p class="text-sm text-gray-500 mt-1">*Respondemos em até 24h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CONTACT INFO SPACE -->
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+                        <div class="flex space-x-4">
+                            <!-- SOCIAL MEDIA LINKS SPACE - ADD YOUR LINKS HERE -->
+                            <a href="#" class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-200">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-200">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-200">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-200">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <!-- END SOCIAL MEDIA LINKS SPACE -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Envie uma mensagem</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Assunto</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <option>Orçamento</option>
+                                <option>Dúvida sobre produtos</option>
+                                <option>Personalização</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <!-- LOGO SPACE IN FOOTER - REPLACE WITH YOUR LOGO -->
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-leaf text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Perfect For Transport</h3>
+                    </div>
+                    <!-- END LOGO SPACE -->
+                    <p class="text-gray-400 mb-4">Soluções em embalagens ecológicas que combinam qualidade, estilo e responsabilidade ambiental.</p>
+                    <div class="flex space-x-4">
+                        <!-- SOCIAL MEDIA LINKS SPACE - ADD YOUR LINKS HERE -->
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <!-- END SOCIAL MEDIA LINKS SPACE -->
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Produtos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#produtos" class="text-gray-400 hover:text-white">Sacola Pequena</a></li>
+                        <li><a href="#produtos" class="text-gray-400 hover:text-white">Sacola Média</a></li>
+                        <li><a href="#produtos" class="text-gray-400 hover:text-white">Sacola Grande</a></li>
+                        <li><a href="#personalizadas" class="text-gray-400 hover:text-white">Personalizadas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#sobre" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white">Contato</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Assine nossa newsletter para receber novidades e promoções.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu email" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none">
+                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="year"></span> Perfect For Transport. Todos os direitos reservados.</p>
+                <p class="mt-2">Desenvolvido com <i class="fas fa-heart text-red-400"></i> para um planeta melhor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Product price calculator (simplified example)
+        const customizationForm = document.querySelector('#personalizadas form');
+        
+        if (customizationForm) {
+            customizationForm.addEventListener('change', function() {
+                // This is a simplified calculation - adjust with your real pricing logic
+                const size = customizationForm.querySelector('select:nth-of-type(1)').value;
+                const quantity = customizationForm.querySelector('select:nth-of-type(2)').value;
+                const colors = customizationForm.querySelector('select:nth-of-type(3)').value;
+                
+                let basePrice = 0;
+                
+                // Base price by size
+                if (size.includes('Pequeno')) basePrice = 1.50;
+                else if (size.includes('Médio')) basePrice = 2.00;
+                else if (size.includes('Grande')) basePrice = 2.50;
+                
+                // Add for colors (simplified)
+                const colorCount = parseInt(colors.split(' ')[0]);
+                basePrice += colorCount * 0.30;
+                
+                // Apply quantity discount
+                if (quantity === '100 unidades') basePrice *= 1.0;
+                else if (quantity === '250 unidades') basePrice *= 0.95;
+                else if (quantity === '500 unidades') basePrice *= 0.90;
+                else if (quantity === '1000 unidades') basePrice *= 0.85;
+                else if (quantity === '2000+ unidades') basePrice *= 0.80;
+                
+                // Display calculated price
+                document.querySelector('#personalizadas .flex.justify-between span:last-child').textContent = 
+                    'R$ ' + basePrice.toFixed(2) + '/un';
+            });
+        }
+    </script>
+</body>
+</html>
